@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loja">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btnVoltarLoja"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#00FFFFFF"
+                android:onClick="onClicVoltarLoja"
+                android:tint="#616161"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/txtTopLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#71FFEB3B"
+                android:text="Loja"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/imagelojaoff" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#32757575"
+                android:text="Buffs"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/x2pointsoff" />
+
+            <TextView
+                android:id="@+id/txtGet2xp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 2x more points by eliminating monsters."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txt2xpoTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERMANENT"
+                android:textAlignment="center"
+                android:textColor="#97FF0000" />
+
+            <View
+                android:id="@+id/divider24"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnComprar1"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#00FFFFFF"
+                android:onClick="onClickBtnBuy1"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:srcCompat="@drawable/lojacompraroff" />
+
+            <View
+                android:id="@+id/divider25"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/x2xpoff" />
+
+            <TextView
+                android:id="@+id/txt2xpp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Earn 2x more XP."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txt2xppTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active for 5 minutes."
+                android:textAlignment="center"
+                android:textColor="#97FF0000" />
+
+            <View
+                android:id="@+id/divider26"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnComprar2"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#00FFFFFF"
+                android:onClick="onClickBtnBuy2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lojacompraroff" />
+
+            <View
+                android:id="@+id/divider27"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/clickacada10off" />
+
+            <TextView
+                android:id="@+id/txtClickRobot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 10 seconds, the robot clicks the button once."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtClickTimeRobot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active for 5 minutes."
+                android:textAlignment="center"
+                android:textColor="#97FF0000" />
+
+            <View
+                android:id="@+id/divider29"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnComprar3"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#00FFFFFF"
+                android:onClick="onClickBtnBuy3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lojacompraroff" />
+
+            <View
+                android:id="@+id/divider31"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#00FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

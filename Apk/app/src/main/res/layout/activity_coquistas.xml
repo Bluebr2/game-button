@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C0C0"
+    tools:context=".Coquistas">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conquistasfundo" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnVoltarConquista"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#00303030"
+                android:onClick="onClickVoltarConquista"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <TextView
+                android:id="@+id/textTopoConq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:background="#71FFEB3B"
+                android:text="Missions"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/gifConq"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:background="#00FFFFFF" />
+
+            <View
+                android:id="@+id/divider22"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textMisssionsToClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#467E7E7E"
+                android:fontFamily="sans-serif-thin"
+                android:text=" MISSIONS TO CLICK"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider23"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK MORE THAN 500 TIMES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar500Click"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFC107"
+                android:clickable="false"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:isScrollContainer="false"
+                android:keepScreenOn="false"
+                android:max="500"
+                android:progressTint="#e29700" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK MORE THAN 1000 TIMES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar1000Clicks"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="1000"
+                android:progressTint="#e29700" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK MORE THAN 50.000 TIMES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar50000Clicks"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50000"
+                android:progressTint="#e29700" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textMonsterMissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#467E7E7E"
+                android:fontFamily="sans-serif-thin"
+                android:text="BOSS MISSIONS"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider21"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KILL 250 ENEMIES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar250Enimes"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="250"
+                android:progressTint="#FF0000" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KILL 500 ENEMIES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar500Enimes"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="500"
+                android:progressTint="#FF0000" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KILL 1000 ENEMIES"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/bar1000Enimes"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="1000"
+                android:progressTint="#FF0000" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textLevelMissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#467E7E7E"
+                android:fontFamily="sans-serif-thin"
+                android:text="LEVEL MISSIONS"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 10"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 15"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl15"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="15"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 25"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl25"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="25"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 50"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl50"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 75"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl75"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="75"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 100"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl100"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 125"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl125"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="125"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 150"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl150"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="150"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 175"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl175"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="175"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 225"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl225"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="225"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 350"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl350"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="350"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 500"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl500"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="600"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get to LEVEL 999"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/barLvl999"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="999"
+                android:progressTint="#7B68EE" />
+
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#00FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

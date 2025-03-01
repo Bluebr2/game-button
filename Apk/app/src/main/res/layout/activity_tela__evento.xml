@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".Tela_Evento">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="#00FFFFFF"
+                android:onClick="onClickVoltar"
+                android:tint="#000000"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="411dp"
+                android:layout_height="139dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/banner_event1" />
+
+            <View
+                android:id="@+id/divider30"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:background="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/textEvent1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:text="0/600"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/progressEvent1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:max="600" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="363dp"
+                android:background="#83FFF9E1"
+                android:text="PRIZES\n\n80 Coins Event => 2.000 coin\n\n120 Coins Event => 5.000 coin\n\n 180 Coins Event => 5.000 coin\n\n 200 Coins Event => Leonard (Skin: Demon King)\n\n 240 Coins Event => 6.000 coin\n\n 300 Coins Event => 6.500 coin\n\n340 Coins Event => 6.500 coin\n\n 400 Coins Event => 6.500 coin\n\n 500 Coins Event = > 200.000 coin\n\n 600 Coins Event => Barthur(Skin: Robot)"
+                android:textAlignment="center"
+                android:textColor="#F16C6C" />
+
+            <View
+                android:id="@+id/divider36"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="743dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/premio_principal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

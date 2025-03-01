@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoTelaPrincipalInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1295dp"
+        android:layout_height="30dp"
+        android:background="#49000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textDay"
+        android:layout_width="66dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="372dp"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/textCoins"
+        android:layout_width="129dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="372dp"
+        android:text="Coins:"
+        android:textAlignment="textStart"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="449dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageButton
+        android:id="@+id/btnconfig"
+        android:layout_width="43dp"
+        android:layout_height="31dp"
+        android:background="#00FFFFFF"
+        android:onClick="onClickConfigButton"
+        android:scaleType="fitStart"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageView
+        android:id="@+id/btnConquista"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:onClick="onClickConquistaButton"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/mionoff" />
+
+    <TextView
+        android:id="@+id/txtMiss"
+        android:layout_width="67dp"
+        android:layout_height="17dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <ImageView
+        android:id="@+id/btnHistory"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:onClick="onClickHistoryButton"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/historiaoff" />
+
+    <TextView
+        android:id="@+id/txtHist"
+        android:layout_width="67dp"
+        android:layout_height="18dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <ImageView
+        android:id="@+id/btnInventario"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:onClick="onClickInventButton"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/inventariooff" />
+
+    <TextView
+        android:id="@+id/txtInven"
+        android:layout_width="72dp"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <ImageView
+        android:id="@+id/btnBossGlobal"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:onClick="onClickBossButton"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/bossicon" />
+
+    <TextView
+        android:id="@+id/txtBos"
+        android:layout_width="62dp"
+        android:layout_height="19dp"
+        android:text="Boss"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <ImageView
+        android:id="@+id/btnMapa"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:onClick="onClickMapaButton"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mapalogo" />
+
+    <TextView
+        android:id="@+id/txtMap"
+        android:layout_width="62dp"
+        android:layout_height="19dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <ImageView
+        android:id="@+id/btnLoja"
+        android:layout_width="89dp"
+        android:layout_height="98dp"
+        android:onClick="onClickLojaButton"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/imagelojaoff" />
+
+    <TextView
+        android:id="@+id/textLvl"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:layout_weight="0"
+        android:autoSizeTextType="uniform"
+        android:text="lvl 0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <ProgressBar
+        android:id="@+id/barLvl"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="398dp"
+        android:layout_height="21dp"
+        android:background="#00FFFFFF"
+        android:indeterminate="false"
+        android:max="200000"
+        android:progressTint="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <ImageButton
+        android:id="@+id/btnPrincipal"
+        android:layout_width="338dp"
+        android:layout_height="108dp"
+        android:adjustViewBounds="false"
+        android:background="#00FFFFFF"
+        android:cropToPadding="false"
+        android:onClick="youClickInButtonInicial"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barLvl"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/button_inicial" />
+
+    <ImageView
+        android:id="@+id/imageBuff1"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/barLvl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfig"
+        app:layout_constraintVertical_bias="0.697"
+        app:srcCompat="@drawable/x2pointsoff" />
+
+    <ImageView
+        android:id="@+id/imageBuff2"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/barLvl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfig"
+        app:layout_constraintVertical_bias="0.697"
+        app:srcCompat="@drawable/x2xpoff" />
+
+    <ImageView
+        android:id="@+id/imageBuff3"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/barLvl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfig"
+        app:layout_constraintVertical_bias="0.697"
+        app:srcCompat="@drawable/clickacada10off" />
+
+    <ImageView
+        android:id="@+id/btnEvent"
+        android:layout_width="86dp"
+        android:layout_height="81dp"
+        android:onClick="onClickEventButton"
+        app:layout_constraintBottom_toTopOf="@+id/barLvl"
+        app:layout_constraintEnd_toStartOf="@+id/btnLoja"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
+        app:srcCompat="@drawable/evento_logo" />
+
+    <ProgressBar
+        android:id="@+id/barProgressEvent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="263dp"
+        android:layout_height="37dp"
+        android:max="500"
+        android:progress="500"
+        android:progressTint="#B22222"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <ImageView
+        android:id="@+id/btnMonsterEvent"
+        android:layout_width="383dp"
+        android:layout_height="344dp"
+        android:layout_marginTop="8dp"
+        android:onClick="youClickInButtonEvent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barProgressEvent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/moeda_base" />
+
+    <ImageView
+        android:id="@+id/imageDica"
+        android:layout_width="428dp"
+        android:layout_height="855dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/dia_personagemforca_pt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
